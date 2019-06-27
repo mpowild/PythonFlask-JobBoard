@@ -37,6 +37,8 @@ def test_app_review_route_module7():
         "value/keywords/value/id": "employer_id"
     }
 
+    print(return_values)
+
     assert render in return_values, 'Did you return the `render_template` call?'
     assert employer in return_values, 'Did you return a call to `redirect` and `url_for`?'
 
